@@ -6,9 +6,14 @@ import java.util.ArrayList;
 public class Menginap extends Fasilitas{
     ArrayList<Kamar> arrKamar = new ArrayList<>();
     public int jumlahHari;
+    public Kamar kamar;
+    public Menginap (Kamar k, int jumlahHari){
+        this.kamar = k;
+        this.jumlahHari = jumlahHari;
+    }
     @Override
     public int hitungBayar() {
-        return 0;
+        return jumlahHari * kamar.harga;
     }
 
 }
