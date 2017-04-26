@@ -6,6 +6,7 @@ public class Pijat extends Fasilitas {
 
     public Pijat(int jumlahjam){
         this.jumlahjam=jumlahjam;
+        this.namaFasilitas = "Pijat";
     }
 
     @Override
